@@ -657,7 +657,7 @@ button:focus {
   }
   .project-link{
     display: block;
-    transition-property:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-property:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   }
 
 .project-link:hover,
@@ -688,7 +688,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
   font-weight: 400;
   font-size: 18px;
-  line-height:1,6 ;
+  line-height:1.6 ;
   color: var(--accent-color);
 
  top:0;
@@ -701,19 +701,24 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
  transform:translateY(-100%); 
 
- opacity:0;
+ /* opacity:0; */
  position: absolute;
- overflow: hidden;
+ /* overflow: hidden; */
 
  transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-text:hover{
+/* .overlay-text:hover{
   opacity: 1;
-  overflow: visible;
+  overflow: visible; */
   
 }
+
+.project-link:hover .overlay-text{
+   transform: translateY(0)
+  }
 /*  
 .flex-project .overlay-text::before{
   transform: translateY(0); 
