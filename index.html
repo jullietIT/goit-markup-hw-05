@@ -51,7 +51,7 @@
         <section class="section section-hero">
              <div class="container container-hero">
                   <h2 class="section-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h2>
-                  <button type="button" class="button-service">  Заказать услугу</button>
+                  <button type="button" class="button-service" data-modal-open>  Заказать услугу</button>
             </div>
         </section>
         
@@ -311,7 +311,8 @@
                              
                      </li>
                    <li class="company-list">
-                    <a class="company-item" href=""><svg class="company-clients">
+                    <a class="company-item" href="">
+                      <svg class="company-clients">
                       <use class="company-link" href="./images/icons.svg#groupB">
                         </use>
                    </svg></a>
@@ -328,7 +329,7 @@
               </div>
          </section>
           </main>
-       <!--Подвал-->
+ <!--Подвал-->
     <footer class="footer">
       <div class="container container-footer ">
           <div>
@@ -378,6 +379,26 @@
 
          
      </footer>
-    
+
+<!-- modal -->
+
+    <div class="backdrop is-hidden"  data-modal >
+      
+      <div class="modal">
+            
+        <button data-modal-clos  class="modal-batton" type="button" e>  
+           <svg class="modal-icon"  width="30" height="30"> 
+               <use class="modal-icon-link" href="./images/icons.svg#close"> </use>
+            </svg>
+        </button>
+       
+    </div>
+
+
+       </div>
+    </section>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
